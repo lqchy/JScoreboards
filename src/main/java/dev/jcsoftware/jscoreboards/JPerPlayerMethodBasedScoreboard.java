@@ -41,4 +41,10 @@ public final class JPerPlayerMethodBasedScoreboard extends JPerPlayerScoreboard 
     playerToLinesMap.put(player.getUniqueId(), Arrays.asList(lines));
     updateScoreboard();
   }
+  
+  public void setLine(Player player, int index, String line) {
+    getLines(player.getUniqueId()).set(index, line)
+    updateScoreboard()
+  }
+  
 }
